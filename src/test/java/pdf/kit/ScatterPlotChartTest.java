@@ -11,9 +11,6 @@ import java.util.List;
  */
 public class ScatterPlotChartTest {
 
-
-
-
     public static void main(String[] args) {
         List<XYScatter> list=getData();
         String path= ScatterPlotChart.draw(list,-1,"他评得分(%)","自评得分(%)");

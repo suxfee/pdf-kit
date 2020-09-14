@@ -25,6 +25,4 @@ public class BaseException extends RuntimeException {
         this.errorCode=500;
         this.errorMsg=errorMsg;
     }
-
-
 }

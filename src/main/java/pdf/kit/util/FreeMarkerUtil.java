@@ -58,6 +58,7 @@ public class FreeMarkerUtil {
      * @description 获取模板
      */
     public static String getContent(String fileName, Object data) {
+
         String templatePath = getPDFTemplatePath(fileName);
         String templateFileName = getTemplateName(templatePath);
         String templateFilePath = getTemplatePath(templatePath);
@@ -145,6 +146,5 @@ public class FreeMarkerUtil {
         return null;
 
     }
-
 
 }

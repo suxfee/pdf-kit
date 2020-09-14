@@ -76,7 +76,8 @@ public class PDFHeaderFooter implements HeaderFooterBuilder {
         ColumnText.showTextAligned(
                 writer.getDirectContent(),
                 Element.ALIGN_LEFT,
-                new Phrase("我是页眉", font),
+//                new Phrase("我是页眉", font),
+                new Phrase("", font),
                 document.left(),
                 document.top() + 20, 0);
 

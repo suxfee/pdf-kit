@@ -2,6 +2,7 @@ package pdf.kit.component;
 
 import com.itextpdf.text.Document;
 import com.itextpdf.text.PageSize;
+import com.itextpdf.text.pdf.BaseFont;
 import com.itextpdf.text.pdf.PdfWriter;
 import com.itextpdf.tool.xml.XMLWorkerFontProvider;
 import com.itextpdf.tool.xml.XMLWorkerHelper;
@@ -52,6 +53,7 @@ public class PDFKit {
             //设置页眉页脚
             PDFBuilder builder = new PDFBuilder(headerFooterBuilder,data);
             builder.setPresentFontSize(10);
+            //设置默认字体
             writer.setPageEvent(builder);
 
             //输出为PDF文件
@@ -155,8 +157,5 @@ public class PDFKit {
     public void setSaveFilePath(String saveFilePath) {
         this.saveFilePath = saveFilePath;
     }
-
-
-
 
 }
